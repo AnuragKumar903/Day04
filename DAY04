@@ -1,0 +1,44 @@
+#include <iostream> 
+using namespace std;
+
+int main() {
+// Ques:01: Write a C++ program that takes two integers as input and performs the following arithmetic operations:
+// Addition
+// Subtraction
+// Multiplication
+// Division (ensure that you handle division by zero)
+// Modulus
+
+    int a, b;
+    cout<<"Enter first integer: ";
+    cin>>a;
+    cout<<"Enter second integer: ";
+    cin>>b;
+    cout<<"Addition: "<<a+b<<endl;
+    cout<<"Subtraction: "<<a-b<<endl;
+    cout<<"Multiplication: "<<a*b<<endl;
+    cout<<"Division: "<<((a == 0 || b == 0) ? "Error" : to_string(a / b))<<endl;
+    cout<<"Modulus: "<<a%b<<endl;
+    
+// Ques-02: Create a Complex class to represent complex numbers and overload the +, -, operators to perform arithmetic operations on complex numbers.
+    int r1, r2, i1, i2;
+   
+    cin>>r1;
+    cin>>i1;
+    cin>>r2;
+    cin>>i2;
+    
+    
+    cout<<"Complex Number1: "<<r1 <<" + "<<i1<<"i"<<endl;
+    cout<<"Complex Number2: "<<r2 <<" + "<<i2<<"i"<<endl;
+    int rSum = r1+r2;
+    int rDiff = r1-r2;
+    int iSum = i1+i2;
+    int iDiff = i1-i2;
+    cout<< "Sum: "<<rSum <<" + "<<iSum<<"i"<<endl;
+    cout<< "Difference: "<<rDiff <<" + "<<iDiff<<"i"<<endl;
+    
+    
+
+    return 0;
+}
